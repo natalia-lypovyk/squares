@@ -1,0 +1,13 @@
+.list-item {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #fcf1db;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #a48b61ff;
+  background: #fcf8e3;
+}
+
+.list-section {
+  min-width: 110px;
+}

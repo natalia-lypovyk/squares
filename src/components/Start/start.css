@@ -1,0 +1,27 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.start-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.start-form__select {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.start-form__button {
+  padding: 10px;
+  border-radius: 6px;
+  border: transparent;
+  font-size: 16px;
+  text-transform: uppercase;
+  background: #0275d8;
+  color: #fff;
+}
+

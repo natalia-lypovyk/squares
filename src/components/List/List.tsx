@@ -1,6 +1,12 @@
+import { FC } from 'react';
+
 import './list.css';
 
-export const List = ({ list }) => {
+interface ListProps {
+  list: string[];
+}
+
+export const List: FC<ListProps> = ({ list }) => {
   return (
     <section className="list-section">
       <ul>

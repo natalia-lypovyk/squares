@@ -1,9 +1,17 @@
+import { FC } from 'react';
+
 import { Cell } from '../Cell/Cell';
 
+import type { Squares } from './squares';
 import './squares.css';
 
-export const Squares = ({ quantity, handleHover }) => {
-  const squares = () => {
+interface SquaresProps {
+  quantity: number;
+  handleHover: (id: string) => void;
+}
+
+export const Squares: FC<SquaresProps> = ({ quantity, handleHover }) => {
+  const squares = (quantity: number): Squares => {
     return [...Array(quantity).keys()].map((el) => (
       [...Array(quantity).keys()].map((item) => ({
         id: `row ${el+1} col ${item+1}`,
@@ -11,7 +19,7 @@ export const Squares = ({ quantity, handleHover }) => {
         col: item + 1
       }))
     ))
-  }
+  };
 
   return (
     <div className="squares">

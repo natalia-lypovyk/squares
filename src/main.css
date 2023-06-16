@@ -16,10 +16,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-table {
-  border-collapse: collapse;
-}
-
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   html {
     display: flex;

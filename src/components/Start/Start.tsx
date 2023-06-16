@@ -1,6 +1,17 @@
+import { FC, MouseEvent } from 'react';
+
 import './start.css';
 
-export const Start = ({ selectedMode, setSelectedMode, isLoading, modes, handleClick, hasGameStarted }) => {
+interface StartProps {
+  selectedMode: string ;
+  setSelectedMode: (e: string) => void;
+  isLoading: boolean;
+  modes: [string];
+  handleClick: (e: MouseEvent<HTMLButtonElement>) => void;
+  hasGameStarted: boolean;
+}
+
+export const Start: FC<StartProps> = ({ selectedMode, setSelectedMode, isLoading, modes, handleClick, hasGameStarted }) => {
   return (
     <div className="top">
       <form className="start-form">
